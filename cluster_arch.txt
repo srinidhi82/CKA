@@ -1,0 +1,6 @@
+K8s host apps in foirm of containers as easily can be deplyed
+Container orchestration - automated way of deplpoying and managing the conyaineres apps
+Too many containers to manage the apps and scale up and down the containers is a tedious way to manage the apps so k8's will help manage and deploy containerised apps
+customized devs - supported on azzure and aws 
+
+apps are run on kultiple instances using nodes on K8's 
