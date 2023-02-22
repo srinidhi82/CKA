@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres
+  labels:
+    tier: db-tier
+spec:
+  containers:
+  #Containers is an array/list. So create the first element/item in the array/list 
+  #and add the following properties to it: name - nginx and image - nginx
+    - name: postgres
+      image: postgres
+      env:
+        - name: POSTGRES_PASSWORD
+          value: mysecretpassword
+# env is an array/list. So add a new item under it.
+# The item will have properties name and value. name should be the name of the environment variable - POSTGRES_PASSWORD. And value should be the password - mysecretpassword
