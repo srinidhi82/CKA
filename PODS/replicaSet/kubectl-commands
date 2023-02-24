@@ -1,0 +1,22 @@
+kubectl create -f replicaset-def.yaml
+kubectl get pods
+kubectl delete pod <podName>
+kubectl descrive replicaset <repliasetname>
+
+kubectl create -f nginx.yaml
+
+EDIT: kubectl edit replicaset <replicaset-name> 
+kubectl scale replicaset <replicasetname> --replicas=2
+
+kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3
+
+kubectl rollout status deployment <deploymentname>
+kubectl rollout history deployment<deoploymentsname>
+
+kubectl edit deployment <deploymentname> --record
+
+kubectl set image deployment frontend simple-webapp=kodekloud/webapp-color:v2
+here simple-webapp is container name
+kubectl rollout undo deployment <deploymentname>
+
+deploy a pod with the same label as set in replica set definition file,outside of replica set

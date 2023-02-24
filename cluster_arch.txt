@@ -4,3 +4,19 @@ Too many containers to manage the apps and scale up and down the containers is a
 customized devs - supported on azzure and aws 
 
 apps are run on kultiple instances using nodes on K8's 
+
+===================
+POD - it is a smallest object in a kubernetets ckuster which si spun on a worker node or if it is a single node cluster on that node. POD is an object where the container consisting of a docker image where the apps are built is deployed
+
+PODS have a 1:1 relationship with the containers and thats how apps are scaled
+
+kubectl run nginx --image=nginx
+
+kubectl describe pod nginx
+
+kubectl get nodes
+kubectl describe node
+kubectl create -f nginx.yaml
+# Describe commands with verbose output
+kubectl describe nodes my-node
+kubectl describe pods my-pod

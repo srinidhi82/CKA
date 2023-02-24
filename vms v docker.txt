@@ -1,0 +1,31 @@
+DOcker runs on a OS Kernel , OS Kernel helps inreaction between OS and Hardware like RAM,memory CPU etc
+apps run on Kernel layer.
+
+Docker virtualise apps layer uses Kernel of the host
+VMS's virtualises complete OS
+
+Size docker smallest
+======================OS==============
+OS  diff sets like ubuntu,fedora,centos, but they all have same OS kernel which is linux. 
+The softare above the linux kernel differentiates the diff operating systems. compilers,file mangers etc 
+
+===================================================
+The kernel is a computer program at the core of a computer's operating system and 
+generally has complete control over everything in the system. 
+It is the portion of the operating system code that is always resident 
+in memory and facilitates interactions between hardware and software components.
+ helps with tasks such as process and memory management, file systems, device control and networking
+
+ Application 
+
+OS Kernel 
+
+CPU   Memory  Devices
+It provides the interfaces needed for users and applications to interact with the computer.
+It launches and manages applications.
+It manages the underlying system hardware devices.
+
+================
+
+COntainers isolaated environments where apps are hosted on it by docker engine
+containers have their own processes, networks and mounts , each container running on a OS or a VM all sare same OS kernel

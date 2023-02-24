@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: fmyapp-replicaset
+  labels:
+    app: UI
+    
+spec:
+  selector:
+    matchLabels:
+      app: UI
+      env: production
+  replicas: 3
+  template:
+    metadata:
+      name: nginx-2
+      labels:
+      app: UI
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+        - name: busybox
+          image: busybox
+ 
+    
+  

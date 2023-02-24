@@ -1,0 +1,16 @@
+docker run command is to runa  container using an image
+docker run nginx
+
+docker ps - list containers running
+docker stop <container ID> or container name
+
+docker ps -a (list all containers)
+
+docker rm <container name>
+
+docker images- list images
+
+docker rmi <image name> , ensure no containers running of that image
+
+containers only run if the process inside it is alive and running, like for example 
+docker run ubuntu will exit immediatly as it is an OS and not an actual lprocess to perform a specific task
